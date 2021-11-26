@@ -10,27 +10,28 @@ Las siguientes preguntas están orientadas a la comprensión del protocolo HTTP.
 2. ¿Qué son los verbos HTTP? Mencionar los más conocidos 
 	Los verbos HTTP se usan para indicar la acción que se desea realizar sobre un recurso.
 	Las más conocidas son:
-	GET- Se usa para recuperar datos del servidor web.
-	POST- Es muy usado para enviar datos al servidor web.
-	PUT- Es usado para actualizar los datos del servidor web.
+	- GET: Se usa para recuperar datos del servidor web.
+	- POST: Es muy usado para enviar datos al servidor web.
+	- PUT: Es usado para actualizar los datos del servidor web.
 3. ¿Qué es un request y un response en una comunicación HTTP? ¿Qué son los headers? 
-	El request es una petición HTTP hecha por un cliente a un servidor web.
-	El HTTP response es la respuesta HTTP de una petición HTTP hecha por un cliente.
+	- El request es una petición HTTP hecha por un cliente a un servidor web.
+	- El HTTP response es la respuesta HTTP de una petición HTTP hecha por un cliente.
 	Los headers se usan para agregar información adicional de las peticiones y respuestas HTTP, como puede ser los permisos para acceder a un recurso, el tipo de recurso , el algoritmo de codificación, etc. 
 4. ¿Qué es un queryString? (En el contexto de una url) 
-	Es un parámetro que se incluye al final de una url, el parámetro tiene un nombre y valor separados por el símbolo  :. Una url puede tener varios parámetros los cuales son separados por el símbolo &. Es muy usado para modificar el contenido de una página, conocer desde que fuente se llego a la página, para rellenar los campos de un formulario, entre otros.
+	- Es un parámetro que se incluye al final de una url, el parámetro tiene un nombre y valor separados por el símbolo  :. Una url puede tener varios parámetros los cuales son separados por el símbolo &. Es muy usado para modificar el contenido de una página, conocer desde que fuente se llego a la página, para rellenar los campos de un formulario, entre otros.
 
 5. ¿Qué es el responseCode? ¿Qué significado tiene los posibles valores devueltos? 
-	Es el código de repuesta de una solicitud HTTP, la cual indica el estado de la solicitud. Los estados se agrupan en cinco partes: de 100-199 son para respuestas Informativas, de 200-299 Son Respuestas Satisfactorias(200 es una respuesta de conexión exitosa que un desarrollador desea ver), de 300-399 son para Redirecciones (muy habitual cuando se prueban nuevas funciones), de 400-499 son errores de los clientes(de aquí el muy temido 404 que aparece cuando no se encuentra el contenido solicitado),  por último de 500-599 son errores de los servidores el 500 también es popular por que indica un error general en le servidor.
+	- Es el código de repuesta de una solicitud HTTP, la cual indica el estado de la solicitud. Los estados se agrupan en cinco partes: de 100-199 son para respuestas Informativas, de 200-299 Son Respuestas Satisfactorias(200 es una respuesta de conexión exitosa que un desarrollador desea ver), de 300-399 son para Redirecciones (muy habitual cuando se prueban nuevas funciones), de 400-499 son errores de los clientes(de aquí el muy temido 404 que aparece cuando no se encuentra el contenido solicitado),  por último de 500-599 son errores de los servidores el 500 también es popular por que indica un error general en le servidor.
 	
 6. ¿Cómo se envía la data en un Get y cómo en un POST? 
-	En un Get los datos son parámetros pasados  al servidor  a traves de la url, en un POST los datos se envían en  el cuerpo de la petición, el tipo de dato que se desea enviar es definido en la cabecera.
+	- En un Get los datos son parámetros pasados  al servidor  a traves de la url, en un POST los datos se envían en  el cuerpo de la petición, el tipo de dato que se desea enviar es definido en la cabecera.
 7. ¿Qué verbo http utiliza el navegador cuando accedemos a una página? 
-	Se utiliza el verbo GET porque se quiere obtener datos del servidor web.
+	- Se utiliza el verbo GET porque se quiere obtener datos del servidor web.
 8. Explicar brevemente qué son las estructuras de datos JSON y XML dando ejemplo de estructuras posibles.
-    -JSON es una forma de almacenar datos que utiliza la misma estructura para definir un objeto javascript, es fácil de usar y transportar muy usado en las api’s web. Aquí un ejemplo:
+    - JSON es una forma de almacenar datos que utiliza la misma estructura para definir un objeto javascript, es fácil de usar y transportar muy usado en las api’s web. Aquí un ejemplo:
     
     ```json
+    {
     "id": "512",
     "properties": {
         "company": "Biglytics",
@@ -47,27 +48,29 @@ Las siguientes preguntas están orientadas a la comprensión del protocolo HTTP.
     "archived": false
     }
     ```
-    -por otro lado XML es un lenguaje para definir información a través de etiquetas, es más complejo que json, ya que tienes que indicar donde termina la definición de un dato. Un ejemplo de XML es HTML.
+    por otro lado XML es un lenguaje para definir información a través de etiquetas, es más complejo que json, ya que tienes que indicar donde termina la definición de un dato. Un ejemplo de XML es HTML.
 
 9. Explicar brevemente el estándar SOAP 
-	Es un protocolo para intercambiar información de manera distribuida, el intercambio de datos es en formato xml y la vía de comunicación usual es http. Es complejo al establecer reglas.
+	- Es un protocolo para intercambiar información de manera distribuida, el intercambio de datos es en formato xml y la vía de comunicación usual es http. Es complejo al establecer reglas.
 
 10. Explicar brevemente el estándar REST Full 
-	Es una interfaz entre sistemas que usan HTTP para operar los datos donde el formato de mensajería es muy flexible, sin embargo predomina JSON.
+	- Es una interfaz entre sistemas que usan HTTP para operar los datos donde el formato de mensajería es muy flexible, sin embargo predomina JSON.
 11. ¿Qué son los headers en un request? ¿Para qué se utiliza el key Content-type en un header? 
-	Los headers en un request son utilizados para agregar información de autenticación, autorización , tipo de dato, entre otros.
-	El Content-type es usado para indicar el tipo de dato que se envía al servidor, además de indicar el estándar de codificación de los caracteres. Por ejemplo en el envió de un formulario el Content-type tiene el valor de multipart/form-data. 
+	- Los headers en un request son utilizados para agregar información de autenticación, autorización , tipo de dato, entre otros.
+	- El Content-type es usado para indicar el tipo de dato que se envía al servidor, además de indicar el estándar de codificación de los caracteres. Por ejemplo en el envió de un formulario el Content-type tiene el valor de multipart/form-data. 
 
 ## Ejercicio 3
-
 Imagen correspondiente al punto 1
-    ![ex3p1-1](https://user-images.githubusercontent.com/74920414/143613268-5f565cad-f277-4314-a5b5-8b4948184678.png)
+
+![ex3p1-1](https://user-images.githubusercontent.com/74920414/143613268-5f565cad-f277-4314-a5b5-8b4948184678.png)
 
 Imagen correspondiente al punto 2
-    ![ex3p2-1](https://user-images.githubusercontent.com/74920414/143613244-3324bb95-a436-4296-9b5b-588fa102958b.png)
+
+![ex3p2-1](https://user-images.githubusercontent.com/74920414/143613244-3324bb95-a436-4296-9b5b-588fa102958b.png)
 
 Imagen correspondiente al punto 3
-    ![ex3p2-1](https://user-images.githubusercontent.com/74920414/143613244-3324bb95-a436-4296-9b5b-588fa102958b.png)
+
+![ex3p3-1](https://user-images.githubusercontent.com/74920414/143613231-e93c4c17-6177-46f4-a438-664dc6134e79.png)
 
 ¿Qué diferencias se observan entre las llamadas el punto 1 y 3?
 En el punto 1 se listan los contactos con nombre y correo además de un identificador, en el punto 3 se listan los mismos contactos con la diferencia de que ahora ya se incluye mi 
@@ -156,10 +159,12 @@ Explicar que son conceptualmente, qué datos almacenan en forma estándar y cóm
         - ParentId
 
 11. Diagrama de Relaciones
-        ![relationShip](https://user-images.githubusercontent.com/74920414/143612459-e0442431-7a5d-4ca4-9fbd-a53da5c8074e.png)
+
+ ![relationShip](https://user-images.githubusercontent.com/74920414/143612459-e0442431-7a5d-4ca4-9fbd-a53da5c8074e.png)
 
 ## Ejercicio 6
 Dejo una imagen como evidencia.
+
 ![ex6](https://user-images.githubusercontent.com/74920414/143617027-b331bd55-ae1e-4ee8-b10b-e391db9d9154.png)
 
 ## Ejercicio 7
