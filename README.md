@@ -29,6 +29,7 @@ Las siguientes preguntas están orientadas a la comprensión del protocolo HTTP.
 	Se utiliza el verbo GET porque se quiere obtener datos del servidor web.
 8. Explicar brevemente qué son las estructuras de datos JSON y XML dando ejemplo de estructuras posibles.
     -JSON es una forma de almacenar datos que utiliza la misma estructura para definir un objeto javascript, es fácil de usar y transportar muy usado en las api’s web. Aquí un ejemplo:
+    
     ```json
     "id": "512",
     "properties": {
