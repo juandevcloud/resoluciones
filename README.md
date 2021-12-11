@@ -237,7 +237,7 @@ Funcionalidades de Salesforce
 Conceptos generales 
 
 **A**. ¿Qué significa SaaS?
-	SaaS son las siglas para Software As A Service, esto quiere decir que el software un servicio que es accedido a través de la nube, y el proveedor del software se encarga de mantenerla, actualizarla y desarrollarla. Tu como cliente solo la configuras y la usas. 
+	SaaS son las siglas para Software As A Service, esto quiere decir que el software es un servicio que es accedido a través de la nube, y el proveedor del software se encarga de mantenerla, actualizarla y desarrollarla. Tu como cliente solo la configuras y la usas. 
 
 **B**. ¿Salesforce es Saas? 
 	Claro que sí, ya que Salesforce por definición es software basado en la nube.
@@ -270,8 +270,7 @@ Conceptos generales
 	Es un indicador de rendimiento para saber si estás cumpliendo o no un objetivo.
 
 **L**. ¿Qué es una API y en qué se diferencia de una Rest API? 
-	Una API es una interfaz que se usa para comunicar programas, como lo es la API de Linux que consiste en llamadas al sistema.
-	por otro lado una Rest API es una interfaz para comunicar programas utilizando la Arquitectura Rest, haciendo referencia a las aplicaciones en la web.
+	Una API es una interfaz que se usa para comunicar programas, como lo es la API de Linux que consiste en llamadas al sistema, por otro lado una Rest API es una interfaz para comunicar programas utilizando la Arquitectura Rest, haciendo referencia a las aplicaciones en la web.
 
 **M**. ¿Qué es un Proceso Batch?
 	Es un programa donde la ejecución no precisa de la supervisión del usuario. 
